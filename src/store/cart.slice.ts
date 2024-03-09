@@ -1,16 +1,16 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import {RootState} from './store.ts';
 
-export interface CartItem {
+export interface ICartItem {
     id: string;
     count: number;
 }
 
-export interface CartState {
-    items: CartItem[];
+export interface ICartState {
+    items: ICartItem[];
 }
 
-const initialState: CartState = {
+const initialState: ICartState = {
     items: []
 };
 

@@ -7,8 +7,12 @@ import {useDispatch, useSelector} from 'react-redux';
 import {cartActions, selectItems} from '../store/cart.slice.ts';
 import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
 import Spinner from '../components/Spinner.tsx';
+import {useCreateOrderMutation} from "../store/order.api.ts";
+import {useEffect} from "react";
 
 const Cart = () => {
+
+    const [createOrder, { isSuccess, isError}] = useCreateOrderMutation();
 
     const dispatch = useDispatch();
 
@@ -21,7 +25,7 @@ const Cart = () => {
     const cartItems = useSelector(selectItems);
     const {data: drugs, error, isLoading} = useGetPharmaciesQuery('');
 
-    if (error) console.error(error);
+    if (error || isError) console.error(error);
 
     const setTotalPrice = Number(cartItems
         .map(i => {
@@ -40,16 +44,20 @@ const Cart = () => {
             order: cartItems,
             totalPrice: setTotalPrice,
         }
-        console.log('checkout', checkout);
-        dispatch(cartActions.reset());
+        createOrder(checkout);
     };
+
+    useEffect(() => {
+        if (isSuccess) dispatch(cartActions.reset());
+    }, [isSuccess, dispatch])
 
     if (!cartItems.length) {
         return (
             <Box sx={{ display: 'flex', flexWrap: 'wrap' , justifyContent: 'center'}}>
                 <Spinner/>
                 <Typography variant='h6' sx={{pt: '10%', pr: 4}}>
-                    You have not selected any medicine for delivery yet!
+                    {isSuccess ? 'Delivery request created successfully!' :
+                    'You have not selected any medicine for delivery yet!'}
                 </Typography>
             </Box>
            );
