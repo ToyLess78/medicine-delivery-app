@@ -13,7 +13,7 @@ Available commands:
 - `npm run dev`
 
 
--  Server I: 
+-  Serve I: 
 
    ➜   [http://localhost:3001](http://localhost:3001/)
 
@@ -23,9 +23,9 @@ Available commands:
 
      ➜  [http://localhost:3001/drugs](http://localhost:3001/drugs)
 
-     ➜  [http://localhost:3001/orders](http://localhost:3001/orders)
+     ➜  [http://localhost:3001/order](http://localhost:3001/order)
 
--  Server II:
+-  Serve II:
 
    ➜   [http://127.0.0.1:517:?](http://127.0.0.1:5173/)
 

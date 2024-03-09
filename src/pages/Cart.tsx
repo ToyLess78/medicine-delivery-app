@@ -3,22 +3,20 @@ import FormInput, {IFormData} from '../components/FormInput.tsx';
 import {SubmitHandler, useForm} from 'react-hook-form';
 import {addressRegEx, emailRegEx, nameRegEx, phoneRegEx} from '../utils/validation.utils.ts';
 import {DrugCartCard} from '../components/DrugCartCard.tsx';
-import {useSelector} from 'react-redux';
-import {selectItems} from '../store/cart.slice.ts';
+import {useDispatch, useSelector} from 'react-redux';
+import {cartActions, selectItems} from '../store/cart.slice.ts';
 import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
 import Spinner from '../components/Spinner.tsx';
 
 const Cart = () => {
+
+    const dispatch = useDispatch();
 
     const {
         register,
         handleSubmit,
         formState: {errors}
     } = useForm<IFormData>();
-
-    const onSubmit: SubmitHandler<IFormData> = (data) => {
-        console.log(data);
-    };
 
     const cartItems = useSelector(selectItems);
     const {data: drugs, error, isLoading} = useGetPharmaciesQuery('');
@@ -35,6 +33,17 @@ const Cart = () => {
         })
         .reduce((acc, i) => acc + i, 0)
         .toFixed(2));
+
+    const onSubmit: SubmitHandler<IFormData> = (data) => {
+        const checkout = {
+            customer: data,
+            order: cartItems,
+            totalPrice: setTotalPrice,
+        }
+        console.log('checkout', checkout);
+        dispatch(cartActions.reset());
+    };
+
     if (!cartItems.length) {
         return (
             <Box sx={{ display: 'flex', flexWrap: 'wrap' , justifyContent: 'center'}}>
@@ -135,7 +144,7 @@ const Cart = () => {
                             Total prise: ${setTotalPrice}
                         </Typography>
                         <Button variant='outlined' size='large' type='submit'
-                                sx={{textTransform: 'none'}}>Submit</Button>
+                                sx={{textTransform: 'none'}}>Checkout</Button>
                     </Stack>
                 </form>
             </Box>

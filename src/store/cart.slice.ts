@@ -51,6 +51,9 @@ export const cartSlice = createSlice({
                 }
                 return i;
             });
+        },
+        reset: (state) => {
+            state.items = initialState.items;
         }
     }
 });
