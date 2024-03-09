@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import {RootState} from "./store.ts";
+import {RootState} from './store.ts';
 
 export interface CartItem {
     id: string;

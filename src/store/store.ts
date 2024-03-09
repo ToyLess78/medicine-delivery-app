@@ -1,7 +1,7 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import {pharmaciesApi} from './pharmacies.api.ts';
 import {drugsApi} from './drugs.api.ts';
-import {cartSlice, CartState} from "./cart.slice.ts";
+import {cartSlice, CartState} from './cart.slice.ts';
 
 const loadCartState = () => {
     try {
@@ -35,11 +35,6 @@ export const store = configureStore({
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(pharmaciesApi.middleware, drugsApi.middleware),
 })
-
-// Перший раз зберігаємо стан cart в localStorage
-// if (!loadCartState()) {
-//     saveCartState(store.getState().cart);
-// }
 
 store.subscribe(() => {
     saveCartState(store.getState().cart);

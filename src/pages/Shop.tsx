@@ -3,6 +3,7 @@ import {Drugstores} from '../components/Drugstores.tsx';
 import {DrugShopCard} from '../components/DrugShopCard.tsx';
 import React from 'react';
 import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
+import Spinner from '../components/Spinner.tsx';
 
 const Shop = () => {
     const [alignment, setAlignment] = React.useState('')
@@ -47,6 +48,7 @@ const Shop = () => {
                         border: (theme) => `1px solid ${theme.palette.divider}`,
                         p: 3,
                         overflow: 'auto',
+                        position: 'relative',
                     }}>
                         {!isLoading ?
                             <Stack spacing={3} direction='row' useFlexGap flexWrap='wrap'
@@ -59,7 +61,7 @@ const Shop = () => {
                                         pharmacy={drug.pharmacy}
                                         id={drug.id}/>
                                 ))}
-                            </Stack> : <div>Loading...</div>}
+                            </Stack> : <Spinner />}
                     </Box>
                 </Grid>
             </Grid>

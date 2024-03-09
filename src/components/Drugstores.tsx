@@ -1,7 +1,7 @@
 import React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import {StyledToggleButtonGroup} from './StyledToggleButtonGroup.tsx';
-import {useGetPharmaciesQuery} from "../store/pharmacies.api.ts";
+import {useGetPharmaciesQuery} from '../store/pharmacies.api.ts';
 
 interface IDrugstoreProps {
     onChange: (event: React.MouseEvent<HTMLElement>, newAlignment: string) => void;

@@ -38,9 +38,6 @@ export const Layout = () => {
                         <NavLink to={'/cart'} style={navLinkStyle}>
                             Shopping Cart
                         </NavLink>
-                        <NavLink to={'/test'} style={navLinkStyle}>
-                            Test
-                        </NavLink>
                     </Stack>
 
                     <Stack spacing={2}>
