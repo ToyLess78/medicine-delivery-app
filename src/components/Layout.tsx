@@ -14,6 +14,9 @@ const navLinkStyle = ({ isActive }: { isActive: boolean }) => ({
 export const Layout = () => {
 
     const items = useSelector(selectItems);
+
+    const cartItemsCount = items.reduce((acc, item) => acc + item.count, 0);
+
     return (
         <>
             <Box component={'section'} sx={{p: 2}}>
@@ -43,7 +46,7 @@ export const Layout = () => {
                     <Stack spacing={2}>
                         <NavLink to={'/cart'}>
 
-                        <Badge badgeContent={items.reduce((acc, item) => acc += item.count, 0)} color='primary'>
+                        <Badge badgeContent={cartItemsCount} color='primary'>
                             <ShoppingCartIcon sx={{color: grey[600]}}/>
                         </Badge>
                         </NavLink>
