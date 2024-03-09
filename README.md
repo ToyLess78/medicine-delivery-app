@@ -1,7 +1,8 @@
 # Medicine Delivery App
-### ~ React + TypeScript + Vite + MUI + Json Server 
+### ~ React + TypeScript + Vite + MUI + Json Server + Concurrently
 
-#### ~ReactDOM + React Router + React Hook Form + Redux Toolkit +  RTK Query
+
+#### ~ ReactDOM + React Router + React Hook Form + Redux Toolkit +  RTK Query
 
 Available commands:
 -------------------
@@ -12,12 +13,29 @@ Available commands:
 - `npm run dev`
 
 
+-  Server I: 
+
+   ➜   [http://localhost:3001](http://localhost:3001/)
+
+  -  Endpoints:  
+
+     ➜  [http://localhost:3001/pharmacies](http://localhost:3001/pharmacies)
+
+     ➜  [http://localhost:3001/drugs](http://localhost:3001/drugs)
+
+     ➜  [http://localhost:3001/orders](http://localhost:3001/orders)
+
+    -  Server II:
+
+       ➜   [http://127.0.0.1:517:?](http://127.0.0.1:5173/)
+
+
 -   `npm run build`
 
 
 #### !!! If Error:
 ```Material UI createTheme_default is not a function```
-#### Fixed it by removing the node_modules/.vite/deps folder and restarting the server:
+#### Fixed it by removing the node_modules/.vite/deps folder and restarting the servers:
 
 
 -   `rm -rf node_modules/.vite/deps`

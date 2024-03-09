@@ -19,10 +19,22 @@ const Cart = () => {
         console.log(data);
     };
 
-    const items = useSelector(selectItems);
+    const cartItems = useSelector(selectItems);
     const {data: drugs, error, isLoading} = useGetPharmaciesQuery('');
-    console.log(items, error, isLoading)
 
+    if (error) console.error(error);
+    if (isLoading) console.log('Loading...')
+
+    const setTotalPrice = Number(cartItems
+        .map(i => {
+            const drug = drugs?.find(d => d.id === i.id);
+            if (!drug) {
+                return 0;
+            }
+            return i.count * drug.price;
+        })
+        .reduce((acc, i) => acc + i, 0)
+        .toFixed(2));
 
     return (
         <Box component={'section'}  sx={{flexGrow: 1}}>
@@ -87,7 +99,7 @@ const Cart = () => {
                             gap: 5,
                             overflow: 'auto'
                         }}>
-                            {items.map(i => {
+                            {cartItems.map(i => {
                                 const drug = drugs?.find(p => p.id === i.id);
                                 if (!drug) {
                                     return;
@@ -104,15 +116,13 @@ const Cart = () => {
                             })}
 
 
-
-
                         </Box>
                     </Grid>
 
                 </Grid>
                 <Stack spacing={2} direction='row' sx={{mt: 3, justifyContent: 'flex-end'}}>
                     <Typography variant="subtitle1" sx={{pt: 2, pr: 4}}>
-                        Total prise: $999
+                        Total prise: ${setTotalPrice}
                     </Typography>
                     <Button variant='outlined' size='large' type='submit' sx={{textTransform: 'none'}}>Submit</Button>
                 </Stack>
