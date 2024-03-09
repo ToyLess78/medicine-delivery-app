@@ -9,6 +9,7 @@ import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
 import Spinner from '../components/Spinner.tsx';
 import {useCreateOrderMutation} from "../store/order.api.ts";
 import {useEffect} from "react";
+import {customerActions} from "../store/customer.slice.ts";
 
 const Cart = () => {
 
@@ -45,6 +46,7 @@ const Cart = () => {
             totalPrice: setTotalPrice,
         }
         createOrder(checkout);
+        dispatch(customerActions.add({ email: data.email, phone: data.phone }));
     };
 
     useEffect(() => {
