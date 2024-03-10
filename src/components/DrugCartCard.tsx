@@ -11,7 +11,7 @@ interface IDrugCartProps {
     price: number;
     genericName: string;
     isAction: boolean;
-    count: number;
+    count?: number;
     width: number;
     id: string;
 }

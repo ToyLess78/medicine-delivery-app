@@ -428,47 +428,7 @@
   ],
   "order": [
     {
-      "id": "b56e",
-      "customer": {
-        "name": "Tetiana Bilenko",
-        "email": "toyless@gmail.com",
-        "phone": "0671021717",
-        "address": "Gorkogo 26"
-      },
-      "oder": [
-        {
-          "id": "b687aabd-b9e4-46dc-99a7-61f8acd3859b",
-          "count": 1
-        },
-        {
-          "id": "ce1a4328-45c8-48f3-83c1-00430ea03e96",
-          "count": 1
-        },
-        {
-          "id": "2481c50a-18f4-4233-a5c3-73f716829ec9",
-          "count": 1
-        }
-      ],
-      "totalPrice": 112.97
-    },
-    {
-      "id": "85b0",
-      "customer": {
-        "name": "Tetiana Bilenko",
-        "email": "toyless@gmail.com",
-        "phone": "0671021717",
-        "address": "Gorkogo 26"
-      },
-      "order": [
-        {
-          "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
-          "count": 2
-        }
-      ],
-      "totalPrice": 40.58
-    },
-    {
-      "id": "8c0e",
+      "id": "aeba",
       "customer": {
         "name": "Tetiana Bilenko",
         "email": "toyless@gmail.com",
@@ -482,46 +442,6 @@
         }
       ],
       "totalPrice": 20.29
-    },
-    {
-      "id": "3373",
-      "customer": {
-        "name": "Tetiana Bilenko",
-        "email": "toyless@gmail.com",
-        "phone": "0671021717",
-        "address": "Gorkogo 26"
-      },
-      "order": [
-        {
-          "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
-          "count": 1
-        },
-        {
-          "id": "12386ccd-3722-4a31-88ae-89f6e9b07ca0",
-          "count": 1
-        }
-      ],
-      "totalPrice": 35.78
-    },
-    {
-      "id": "6807",
-      "customer": {
-        "name": "Tetiana Bilenko",
-        "email": "toyless@gmail.com",
-        "phone": "0671021717",
-        "address": "Gorkogo 26"
-      },
-      "order": [
-        {
-          "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
-          "count": 1
-        },
-        {
-          "id": "12386ccd-3722-4a31-88ae-89f6e9b07ca0",
-          "count": 1
-        }
-      ],
-      "totalPrice": 35.78
     }
   ]
 }

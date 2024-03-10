@@ -13,6 +13,7 @@ export interface IOrder {
     customer: ICustomer;
     order: ICartItem[];
     totalPrice: number;
+    id?: string;
 }
 
 export const orderApi = createApi({
