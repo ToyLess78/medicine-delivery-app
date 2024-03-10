@@ -4,15 +4,19 @@ import {DrugShopCard} from '../components/DrugShopCard.tsx';
 import React from 'react';
 import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
 import Spinner from '../components/Spinner.tsx';
+import {useDispatch, useSelector} from "react-redux";
+import {AppDispatch} from "../store/store.ts";
+import {alignmentActions, selectAlignment} from "../store/alignment.slice.ts";
 
 const Shop = () => {
-    const [alignment, setAlignment] = React.useState('')
+    const dispatch = useDispatch<AppDispatch>();
+    const alignment = useSelector(selectAlignment).alignment;
 
     const handleAlignment = (
         _event: React.MouseEvent<HTMLElement>,
         newAlignment: string,
     ) => {
-        setAlignment(newAlignment);
+        dispatch(alignmentActions.add({alignment: newAlignment}));
     };
 
     const {data: drugs, error, isLoading} = useGetPharmaciesQuery(alignment);

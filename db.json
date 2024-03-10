@@ -502,6 +502,26 @@
         }
       ],
       "totalPrice": 35.78
+    },
+    {
+      "id": "6807",
+      "customer": {
+        "name": "Tetiana Bilenko",
+        "email": "toyless@gmail.com",
+        "phone": "0671021717",
+        "address": "Gorkogo 26"
+      },
+      "order": [
+        {
+          "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
+          "count": 1
+        },
+        {
+          "id": "12386ccd-3722-4a31-88ae-89f6e9b07ca0",
+          "count": 1
+        }
+      ],
+      "totalPrice": 35.78
     }
   ]
 }

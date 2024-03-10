@@ -4,6 +4,7 @@ import {drugsApi} from './drugs.api.ts';
 import {cartSlice, ICartState} from './cart.slice.ts';
 import {orderApi} from './order.api.ts';
 import {customerSlice, ICustomerState} from './customer.slice.ts';
+import {alignmentSlice} from "./alignment.slice.ts";
 
 const loadCartState = () => {
     try {
@@ -55,6 +56,7 @@ export const store = configureStore({
         [orderApi.reducerPath]: orderApi.reducer,
         cart: cartSlice.reducer,
         customer: customerSlice.reducer,
+        alignment: alignmentSlice.reducer,
     }),
     preloadedState: {
         cart: loadCartState(),
