@@ -428,20 +428,7 @@
   ],
   "order": [
     {
-      "id": "aeba",
-      "customer": {
-        "name": "Tetiana Bilenko",
-        "email": "toyless@gmail.com",
-        "phone": "0671021717",
-        "address": "Gorkogo 26"
-      },
-      "order": [
-        {
-          "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
-          "count": 1
-        }
-      ],
-      "totalPrice": 20.29
+      "id": "aeba"
     }
   ]
 }

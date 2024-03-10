@@ -21,6 +21,7 @@ export const orderApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL,
     }),
+    tagTypes: ['Order'],
     endpoints: (builder) => ({
 
         createOrder: builder.mutation<string, IOrder>({
@@ -35,6 +36,7 @@ export const orderApi = createApi({
             query: ({ email, phone }) => ({
                 url: `order?customer.email=${email}&customer.phone=${phone}`,
             }),
+            providesTags: ['Order'],
         }),
     }),
 });

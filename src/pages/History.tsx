@@ -11,11 +11,11 @@ const History = () => {
     const {data: drugs, error, isLoading} = useGetPharmaciesQuery('');
 
     const customer = useSelector(selectCustomer);
-    const {data: orders, error: ordersError, isLoading: ordersIsLoading} = useGetOrderQuery({...customer});
+    const {data: orders, error: ordersError, isLoading: ordersIsLoading} = useGetOrderQuery({...customer}, { refetchOnMountOrArgChange: true });
+
 
     if (error || ordersError) console.log(error || ordersError);
 
-    console.log(ordersIsLoading, isLoading)
 
     return (
         <>
