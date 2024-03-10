@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import {BASE_URL} from './constants.ts';
-import {ICartItem} from './cart.slice.ts';
+import {BASE_URL} from '../constants/constants.ts';
+import {ICartItem} from '../slices/cart.slice.ts';
 
 export interface ICustomer {
     name: string;

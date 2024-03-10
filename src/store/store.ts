@@ -1,10 +1,10 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
-import {pharmaciesApi} from './pharmacies.api.ts';
-import {drugsApi} from './drugs.api.ts';
-import {cartSlice, ICartState} from './cart.slice.ts';
-import {orderApi} from './order.api.ts';
-import {customerSlice, ICustomerState} from './customer.slice.ts';
-import {alignmentSlice} from "./alignment.slice.ts";
+import {pharmaciesApi} from './api/pharmacies.api.ts';
+import {drugsApi} from './api/drugs.api.ts';
+import {cartSlice, ICartState} from './slices/cart.slice.ts';
+import {orderApi} from './api/order.api.ts';
+import {customerSlice, ICustomerState} from './slices/customer.slice.ts';
+import {mainSlice} from "./slices/main.slice.ts";
 
 const loadCartState = () => {
     try {
@@ -56,7 +56,8 @@ export const store = configureStore({
         [orderApi.reducerPath]: orderApi.reducer,
         cart: cartSlice.reducer,
         customer: customerSlice.reducer,
-        alignment: alignmentSlice.reducer,
+        alignment: mainSlice.reducer,
+        isLoading: mainSlice.reducer,
     }),
     preloadedState: {
         cart: loadCartState(),

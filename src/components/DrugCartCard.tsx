@@ -4,7 +4,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import {useDispatch} from 'react-redux';
-import {cartActions} from '../store/cart.slice.ts';
+import {cartActions} from '../store/slices/cart.slice.ts';
 import {AppDispatch} from '../store/store.ts';
 
 interface IDrugCartProps {
@@ -20,7 +20,7 @@ export const DrugCartCard: React.FC<IDrugCartProps> = ({price, genericName, isAc
     const dispatch = useDispatch<AppDispatch>();
 
     const increase = () => {
-        dispatch(cartActions.add(id));
+        dispatch(cartActions.setAlignment(id));
     };
 
     const decrease = () => {

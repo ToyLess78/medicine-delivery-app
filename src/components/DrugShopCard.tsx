@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from '../store/store.ts';
-import {cartActions} from '../store/cart.slice.ts';
+import {cartActions} from '../store/slices/cart.slice.ts';
 
 interface IDrugCardProps {
     price: number;
@@ -22,7 +22,7 @@ const dispatch = useDispatch<AppDispatch>();
 
     const handlerAddToCart = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
-        dispatch(cartActions.add(id));
+        dispatch(cartActions.setAlignment(id));
     }
 
     return (

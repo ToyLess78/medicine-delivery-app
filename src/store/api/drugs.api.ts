@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import {BASE_URL} from './constants.ts';
+import {BASE_URL} from '../constants/constants.ts';
 
 export interface IDrug {
     id: string

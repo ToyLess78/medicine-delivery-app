@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import {RootState} from './store.ts';
+import {RootState} from '../store.ts';
 
 export interface ICartItem {
     id: string;
@@ -39,7 +39,7 @@ export const cartSlice = createSlice({
             }
 
         },
-        add: (state, action: PayloadAction<string>) => {
+        setAlignment: (state, action: PayloadAction<string>) => {
             const existed = state.items.find(i => i.id === action.payload);
             if (!existed) {
                 state.items.push({ id: action.payload, count: 1 });
@@ -59,5 +59,4 @@ export const cartSlice = createSlice({
 });
 
 export const selectItems = (state: RootState) => state.cart.items;
-export default cartSlice.reducer;
 export const cartActions = cartSlice.actions;

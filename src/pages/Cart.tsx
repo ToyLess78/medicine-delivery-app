@@ -1,21 +1,24 @@
-import {Box, Button, Grid, Typography, Stack} from '@mui/material';
+import {Box, Button, Grid, Typography, Stack, Link} from '@mui/material';
 import FormInput, {IFormData} from '../components/FormInput.tsx';
 import {SubmitHandler, useForm} from 'react-hook-form';
 import {addressRegEx, emailRegEx, nameRegEx, phoneRegEx} from '../utils/validation.utils.ts';
 import {DrugCartCard} from '../components/DrugCartCard.tsx';
 import {useDispatch, useSelector} from 'react-redux';
-import {cartActions, selectItems} from '../store/cart.slice.ts';
-import {useGetPharmaciesQuery} from '../store/drugs.api.ts';
+import {cartActions, selectItems} from '../store/slices/cart.slice.ts';
+import {useGetPharmaciesQuery} from '../store/api/drugs.api.ts';
 import Spinner from '../components/Spinner.tsx';
-import {useCreateOrderMutation} from '../store/order.api.ts';
+import {useCreateOrderMutation} from '../store/api/order.api.ts';
 import {useEffect} from 'react';
-import {customerActions} from '../store/customer.slice.ts';
+import {customerActions} from '../store/slices/customer.slice.ts';
+import {useNavigate} from "react-router-dom";
 
 const Cart = () => {
 
     const [createOrder, { isSuccess, isError}] = useCreateOrderMutation();
 
     const dispatch = useDispatch();
+
+    const navigate = useNavigate();
 
     const {
         register,
@@ -46,7 +49,7 @@ const Cart = () => {
             totalPrice: setTotalPrice,
         }
         createOrder(checkout);
-        dispatch(customerActions.add({ email: data.email, phone: data.phone }));
+        dispatch(customerActions.setAlignment({ email: data.email, phone: data.phone }));
     };
 
     useEffect(() => {
@@ -57,9 +60,10 @@ const Cart = () => {
         return (
             <Box sx={{ display: 'flex', flexWrap: 'wrap' , justifyContent: 'center'}}>
                 <Spinner/>
-                <Typography variant='h6' sx={{pt: '10%', pr: 4}}>
-                    {isSuccess ? 'Delivery request created successfully!' :
+                <Typography variant='subtitle1' sx={{pt: '10%', pr: 4}}>
+                    {isSuccess ? 'Delivery request created successfully! See  ' :
                     'You have not selected any medicine for delivery yet!'}
+                    {isSuccess && <Link underline='hover' onClick={() => navigate('/history')} sx={{cursor: 'pointer'}}>details</Link>}
                 </Typography>
             </Box>
            );

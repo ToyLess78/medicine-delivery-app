@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import {StyledToggleButtonGroup} from './StyledToggleButtonGroup.tsx';
-import {useGetPharmaciesQuery} from '../store/pharmacies.api.ts';
+import {useGetPharmaciesQuery} from '../store/api/pharmacies.api.ts';
+import {mainActions} from "../store/slices/main.slice.ts";
+import {useDispatch} from "react-redux";
 
 interface IDrugstoreProps {
     onChange: (event: React.MouseEvent<HTMLElement>, newAlignment: string) => void;
@@ -12,7 +14,13 @@ export const Drugstores: React.FC<IDrugstoreProps> = ({onChange, alignment}) => 
 
     const { data: pharmacies, error, isLoading } = useGetPharmaciesQuery();
 
-    if (isLoading) return <div>Loading...</div>;
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(mainActions.setIsLoading({isLoading: isLoading}));
+    }, [dispatch, isLoading]);
+
+
     if (error) console.log(error);
 
 
