@@ -4,7 +4,7 @@ import {drugsApi} from './api/drugs.api.ts';
 import {cartSlice, ICartState} from './slices/cart.slice.ts';
 import {orderApi} from './api/order.api.ts';
 import {customerSlice, ICustomerState} from './slices/customer.slice.ts';
-import {mainSlice} from "./slices/main.slice.ts";
+import {mainSlice} from './slices/main.slice.ts';
 
 const loadCartState = () => {
     try {

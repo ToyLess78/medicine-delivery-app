@@ -10,7 +10,7 @@ import Spinner from '../components/Spinner.tsx';
 import {useCreateOrderMutation} from '../store/api/order.api.ts';
 import {useEffect} from 'react';
 import {customerActions} from '../store/slices/customer.slice.ts';
-import {useNavigate} from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 
 const Cart = () => {
 

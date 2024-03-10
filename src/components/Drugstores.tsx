@@ -2,8 +2,8 @@ import React, {useEffect} from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import {StyledToggleButtonGroup} from './StyledToggleButtonGroup.tsx';
 import {useGetPharmaciesQuery} from '../store/api/pharmacies.api.ts';
-import {mainActions} from "../store/slices/main.slice.ts";
-import {useDispatch} from "react-redux";
+import {mainActions} from '../store/slices/main.slice.ts';
+import {useDispatch} from 'react-redux';
 
 interface IDrugstoreProps {
     onChange: (event: React.MouseEvent<HTMLElement>, newAlignment: string) => void;

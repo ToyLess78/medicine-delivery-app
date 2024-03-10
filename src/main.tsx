@@ -5,9 +5,9 @@ import Cart from './pages/Cart.tsx';
 import Shop from './pages/Shop.tsx';
 import {Layout} from './Layout/Layout.tsx';
 import RedirectToShop from './pages/RedirectToShop.tsx';
-import {store} from "./store/store.ts";
-import {Provider} from "react-redux";
-import History from "./pages/History.tsx";
+import {store} from './store/store.ts';
+import {Provider} from 'react-redux';
+import History from './pages/History.tsx';
 
 const router = createBrowserRouter([
     {

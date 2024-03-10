@@ -4,7 +4,8 @@ import {NavLink, Outlet} from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { grey } from '@mui/material/colors';
 import {useSelector} from 'react-redux';
-import {selectItems} from '../store/cart.slice.ts';
+import {selectItems} from '../store/slices/cart.slice.ts';
+import {selectCustomer} from '../store/slices/customer.slice.ts';
 
 const navLinkStyle = ({ isActive }: { isActive: boolean }) => ({
     color: '#1976d2',
@@ -14,6 +15,7 @@ const navLinkStyle = ({ isActive }: { isActive: boolean }) => ({
 export const Layout = () => {
 
     const items = useSelector(selectItems);
+    const customer = useSelector(selectCustomer);
 
     const cartItemsCount = items.reduce((acc, item) => acc + item.count, 0);
 
@@ -38,9 +40,10 @@ export const Layout = () => {
                         <NavLink to={'/cart'} style={navLinkStyle}>
                             Shopping Cart
                         </NavLink>
-                        <NavLink to={'/history'} style={navLinkStyle}>
+
+                        {customer.email && customer.phone && <NavLink to={'/history'} style={navLinkStyle}>
                             History
-                        </NavLink>
+                        </NavLink>}
                     </Stack>
 
                     <Stack spacing={2}>
@@ -54,7 +57,7 @@ export const Layout = () => {
                 </Stack>
 
             </Box>
-            <Outlet />
+            <Outlet/>
         </>
     )
 };

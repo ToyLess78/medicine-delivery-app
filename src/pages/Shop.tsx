@@ -3,10 +3,10 @@ import {Drugstores} from '../components/Drugstores.tsx';
 import {DrugShopCard} from '../components/DrugShopCard.tsx';
 import React from 'react';
 import {useGetPharmaciesQuery} from '../store/api/drugs.api.ts';
-import {useDispatch, useSelector} from "react-redux";
-import {AppDispatch} from "../store/store.ts";
-import {mainActions, selectAlignment, selectIsLoading} from "../store/slices/main.slice.ts";
-import Spinner from "../components/Spinner.tsx";
+import {useDispatch, useSelector} from 'react-redux';
+import {AppDispatch} from '../store/store.ts';
+import {mainActions, selectAlignment, selectIsLoading} from '../store/slices/main.slice.ts';
+import Spinner from '../components/Spinner.tsx';
 
 const Shop = () => {
     const dispatch = useDispatch<AppDispatch>();
