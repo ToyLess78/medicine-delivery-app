@@ -1,0 +1,441 @@
+{
+  "pharmacies": [
+    {
+      "id": "0aa865da-28f1-4ec8-bf70-b0da65586883",
+      "pharmacy": "Drags 24"
+    },
+    {
+      "id": "ddae0230-0f7f-43c2-b88d-688de322cf11",
+      "pharmacy": "Pharma Trust"
+    },
+    {
+      "id": "5c7a2d78-545b-4992-9dff-72c327710319",
+      "pharmacy": "HealthMart"
+    },
+    {
+      "id": "210f3bde-97b0-41e8-ac98-6221be7b6287",
+      "pharmacy": "MediSave"
+    },
+    {
+      "id": "d3cb88eb-7871-43cc-ac75-ae9e11b252ba",
+      "pharmacy": "PillBox"
+    },
+    {
+      "id": "a67cecc1-53f6-4105-bde9-10c01bb617cc",
+      "pharmacy": "WellMed"
+    },
+    {
+      "id": "d578af5e-c372-48de-831e-58b6122ab21e",
+      "pharmacy": "CureExpress"
+    },
+    {
+      "id": "9835c797-377d-4ea9-b2bc-438531fee9bb",
+      "pharmacy": "MediPlus"
+    },
+    {
+      "id": "06327b37-3e7b-48fd-bf68-6d6ac2d8127a",
+      "pharmacy": "Green Cross"
+    }
+  ],
+  "drugs": [
+    {
+      "id": "213d4c5f-8e02-4c46-9b1e-7060bf8efab2",
+      "genericName": "LEVOTHYROXINE SODIUM 50MCG",
+      "brandName": "SYNTHROID",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Drags 24",
+      "price": 10.99
+    },
+    {
+      "id": "12386ccd-3722-4a31-88ae-89f6e9b07ca0",
+      "genericName": "METFORMIN HYDROCHLORIDE 500MG",
+      "brandName": "GLUCOPHAGE",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Pharma Trust",
+      "price": 15.49
+    },
+    {
+      "id": "2a73e61d-d1eb-46b6-8642-6f0dc9007b12",
+      "genericName": "ATORVASTATIN CALCIUM 20MG",
+      "brandName": "LIPITOR",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "HealthMart",
+      "price": 20.29
+    },
+    {
+      "id": "e61931f2-7e41-4593-b424-7b617c05ca2d",
+      "genericName": "OMEPRAZOLE CAPSULES 20MG",
+      "brandName": "PRILOSEC",
+      "measurementUnit": "None",
+      "form": "Capsule",
+      "pharmacy": "MediSave",
+      "price": 8.99
+    },
+    {
+      "id": "3e743f57-ebad-4845-b37f-843fa68492bb",
+      "genericName": "IBUPROFEN 200MG",
+      "brandName": "ADVIL",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "PillBox",
+      "price": 5.79
+    },
+    {
+      "id": "9b0bd63d-baf2-4e63-9666-d62d7298a8a9",
+      "genericName": "AMLODIPINE BESYLATE 5MG",
+      "brandName": "NORVASC",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "WellMed",
+      "price": 12.99
+    },
+    {
+      "id": "2b443808-8330-458d-8ca4-ecd6eae05aeb",
+      "genericName": "CLOPIDOGREL 75MG",
+      "brandName": "PLAVIX",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "CureExpress",
+      "price": 18.75
+    },
+    {
+      "id": "1a95d504-7bdf-47da-b784-0b708568e9c0",
+      "genericName": "WARFARIN SODIUM 5MG",
+      "brandName": "COUMADIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediPlus",
+      "price": 9.99
+    },
+    {
+      "id": "09733933-99e5-4aca-a4ab-a2e7ef72466b",
+      "genericName": "PREDNISONE 20MG",
+      "brandName": "DELTASONE",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Green Cross",
+      "price": 6.49
+    },
+    {
+      "id": "09ba081f-8891-49d4-9d3d-a4f9b80b05bd",
+      "genericName": "LISINOPRIL 10MG",
+      "brandName": "PRINIVIL",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Drags 24",
+      "price": 22.99
+    },
+    {
+      "id": "df997d81-742b-4fb2-a064-8b1c01e9b8f2",
+      "genericName": "GABAPENTIN CAPSULES 300MG",
+      "brandName": "NEURONTIN",
+      "measurementUnit": "None",
+      "form": "Capsule",
+      "pharmacy": "Pharma Trust",
+      "price": 17.25
+    },
+    {
+      "id": "bd080353-850f-4f23-a134-c9f25ec0bc39",
+      "genericName": "SERTRALINE HYDROCHLORIDE 50MG",
+      "brandName": "ZOLOFT",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "HealthMart",
+      "price": 14.99
+    },
+    {
+      "id": "beabda06-372d-46d1-96f2-be4f35153a3d",
+      "genericName": "SIMVASTATIN 20MG",
+      "brandName": "ZOCOR",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediSave",
+      "price": 11.49
+    },
+    {
+      "id": "08d753e5-1d4c-40c0-ad2c-8c8f8d2da880",
+      "genericName": "METOPROLOL TARTRATE 25MG",
+      "brandName": "LOPRESSOR",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "PillBox",
+      "price": 13.99
+    },
+    {
+      "id": "4669979d-fe91-4e3c-92f1-fffb8ba679ba",
+      "genericName": "FLUOXETINE HYDROCHLORIDE 20MG",
+      "brandName": "PROZAC",
+      "measurementUnit": "None",
+      "form": "Capsule",
+      "pharmacy": "WellMed",
+      "price": 16.49
+    },
+    {
+      "id": "1a9d9df1-5651-4880-a1fd-c702303436ac",
+      "genericName": "HYDROCODONE BITARTRATE 5MG/325MG",
+      "brandName": "NORCO",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "CureExpress",
+      "price": 19.99
+    },
+    {
+      "id": "343b3e06-0c1b-438c-8dec-5ed96bb3e826",
+      "genericName": "TRAMADOL HYDROCHLORIDE 50MG",
+      "brandName": "ULTRAM",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediPlus",
+      "price": 24.99
+    },
+    {
+      "id": "1275be6e-8811-423a-b63d-8d1a382f0465",
+      "genericName": "CETIRIZINE HYDROCHLORIDE 10MG",
+      "brandName": "ZYRTEC",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Green Cross",
+      "price": 7.99
+    },
+    {
+      "id": "caa0e604-52d4-4540-b263-54d7a4143418",
+      "genericName": "ESCITALOPRAM OXALATE 10MG",
+      "brandName": "LEXAPRO",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Drags 24",
+      "price": 21.49
+    },
+    {
+      "id": "8c9db18a-50a0-43cf-abb5-771d9a534336",
+      "genericName": "FEXOFENADINE HYDROCHLORIDE 180MG",
+      "brandName": "ALLEGRA",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Pharma Trust",
+      "price": 23.99
+    },
+    {
+      "id": "a31eb4ac-615f-454c-a011-e54566925735",
+      "genericName": "MELOXICAM 15MG",
+      "brandName": "MOBIC",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "HealthMart",
+      "price": 28.49
+    },
+    {
+      "id": "99aa6f0f-9429-4046-8fc6-640849d9bdb2",
+      "genericName": "LOSARTAN POTASSIUM 50MG",
+      "brandName": "COZAAR",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediSave",
+      "price": 26.99
+    },
+    {
+      "id": "d2161557-f8b0-4815-b398-051383e32e8a",
+      "genericName": "DEXAMETHASONE 4MG",
+      "brandName": "DECADRON",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "PillBox",
+      "price": 29.99
+    },
+    {
+      "id": "b687aabd-b9e4-46dc-99a7-61f8acd3859b",
+      "genericName": "ACETAMINOPHEN 500MG",
+      "brandName": "TYLENOL",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "WellMed",
+      "price": 27.99
+    },
+    {
+      "id": "1b9be8d6-eb02-498c-b0c5-3e7e894a2b58",
+      "genericName": "ASPIRIN 81MG",
+      "brandName": "BAYER ASPIRIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "CureExpress",
+      "price": 25.99
+    },
+    {
+      "id": "8ee21820-6b8d-4062-be4a-8962cf89d942",
+      "genericName": "CLARITHROMYCIN 500MG",
+      "brandName": "BIAXIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediPlus",
+      "price": 30.99
+    },
+    {
+      "id": "42c1d261-f24b-4aac-92e3-64312415f09e",
+      "genericName": "DOXYCYCLINE HYCLATE 100MG",
+      "brandName": "VIBRAMYCIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Green Cross",
+      "price": 33.49
+    },
+    {
+      "id": "52389238-c68d-418f-b047-ff03d91763ea",
+      "genericName": "GLYBURIDE 5MG",
+      "brandName": "DIABETA",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Drags 24",
+      "price": 32.99
+    },
+    {
+      "id": "c8d0c8b9-38ae-4200-a76c-2b4e04e35eda",
+      "genericName": "LORATADINE 10MG",
+      "brandName": "CLARITIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Pharma Trust",
+      "price": 31.49
+    },
+    {
+      "id": "2919b2ab-c832-4575-ac11-6c15e8fbc095",
+      "genericName": "MORPHINE SULFATE 15MG",
+      "brandName": "MS CONTIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "HealthMart",
+      "price": 34.99
+    },
+    {
+      "id": "1aae2414-bf9a-465c-a26b-66a7bdf61ba3",
+      "genericName": "OXYCODONE HYDROCHLORIDE 5MG",
+      "brandName": "OXYCONTIN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediSave",
+      "price": 35.99
+    },
+    {
+      "id": "e55d701b-6a61-4134-9751-57d37300696a",
+      "genericName": "PANTOPRAZOLE SODIUM 40MG",
+      "brandName": "PROTONIX",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "PillBox",
+      "price": 36.99
+    },
+    {
+      "id": "ce1a4328-45c8-48f3-83c1-00430ea03e96",
+      "genericName": "PHENOBARBITAL 32.4MG",
+      "brandName": "LUMINAL",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "WellMed",
+      "price": 37.99
+    },
+    {
+      "id": "aedac625-8303-4a73-b464-6e4b2ed141ce",
+      "genericName": "PIROXICAM CAPSULES 20MG",
+      "brandName": "FELDENE",
+      "measurementUnit": "None",
+      "form": "Capsule",
+      "pharmacy": "CureExpress",
+      "price": 39.49
+    },
+    {
+      "id": "76ddbd9c-9bc4-4f06-bbec-dfef119efae0",
+      "genericName": "RANITIDINE 150MG",
+      "brandName": "ZANTAC",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediPlus",
+      "price": 40.99
+    },
+    {
+      "id": "ca3afdb6-cce1-425c-abf0-aace5d975d27",
+      "genericName": "SILDENAFIL CITRATE 100MG",
+      "brandName": "VIAGRA",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Green Cross",
+      "price": 38.99
+    },
+    {
+      "id": "d823c621-5bca-49b0-b19a-9d1d3394f464",
+      "genericName": "TETRACYCLINE HYDROCHLORIDE 250MG",
+      "brandName": "SUMYCIN",
+      "measurementUnit": "None",
+      "form": "Capsule",
+      "pharmacy": "Drags 24",
+      "price": 42.99
+    },
+    {
+      "id": "a02b827a-f1e8-4552-b289-3fcf9cdb4bf4",
+      "genericName": "TRIMETHOPRIM 100MG",
+      "brandName": "PROLOPRIM",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "Pharma Trust",
+      "price": 44.49
+    },
+    {
+      "id": "b6c0a585-c696-42c9-a6d4-a5b15c7f4b2e",
+      "genericName": "VALACYCLOVIR HYDROCHLORIDE 500MG",
+      "brandName": "VALTREX",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "HealthMart",
+      "price": 41.99
+    },
+    {
+      "id": "577b5509-bb55-4620-8369-31335cbf78d8",
+      "genericName": "VENLAFAXINE HYDROCHLORIDE 75MG",
+      "brandName": "EFFEXOR XR",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "MediSave",
+      "price": 43.99
+    },
+    {
+      "id": "16ca7f0d-3648-4cd9-9928-7a3b58ab417c",
+      "genericName": "ZOLPIDEM TARTRATE 10MG",
+      "brandName": "AMBIEN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "PillBox",
+      "price": 45.99
+    },
+    {
+      "id": "2481c50a-18f4-4233-a5c3-73f716829ec9",
+      "genericName": "ONDANSETRON HYDROCHLORIDE 4MG",
+      "brandName": "ZOFRAN",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "WellMed",
+      "price": 46.99
+    },
+    {
+      "id": "0916271d-6755-4f9d-bf09-b25b59791456",
+      "genericName": "MELOXICAM 7.5MG",
+      "brandName": "MOBIC",
+      "measurementUnit": "None",
+      "form": "Tablet",
+      "pharmacy": "CureExpress",
+      "price": 47.99
+    }
+  ],
+  "orders": [
+    {
+      "id": "c4b4",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdnZmY2QGhmaC51YSIsImlhdCI6MTcwOTU1MDkzOSwiZXhwIjoxNzA5NTU0NTM5LCJzdWIiOiIyMjEyNzcwOS03NmE3LTQxYzgtYjJlZC04ZDVjNzEzNDc4NTMifQ.qXVtujx24xnJZxZhEnlWYlU8wmrExKdugE82Ke8WERc",
+      "user": {
+        "email": "ggff6@hfh.ua",
+        "fullName": "Tetiana Bilyanova",
+        "createdAt": "2024-03-04T09:10:37.785Z",
+        "id": "22127709-76a7-41c8-b2ed-8d5c71347853"
+      }
+    }
+  ]
+}
