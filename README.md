@@ -25,10 +25,6 @@ Available commands:
 
      ➜  [http://localhost:3001/order](http://localhost:3001/order)
 
--  Serve II:
-
-   ➜   [http://127.0.0.1:517:?](http://127.0.0.1:5173/)
-
 
 -   `npm run build`
 
