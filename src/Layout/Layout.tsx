@@ -33,6 +33,11 @@ export const Layout = () => {
                         spacing={2}
                         direction={'row'}
                         divider={<Divider orientation='vertical' flexItem/>}>
+                        <img
+                            src="/logo.svg"
+                            alt="Logo"
+                            loading="lazy"
+                        />
                         <NavLink to={'/'} style={navLinkStyle}>
                             Shop
                         </NavLink>
