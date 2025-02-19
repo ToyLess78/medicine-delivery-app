@@ -1,7 +1,6 @@
 # Medicine Delivery App
 ### ~ React + TypeScript + Vite + MUI + Json Server + Concurrently
 
-
 #### ~ ReactDOM + React Router + React Hook Form + Redux Toolkit +  RTK Query
 
 Available commands:
