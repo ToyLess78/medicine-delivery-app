@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import {BASE_URL} from '../constants/constants.ts';
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { BASE_URL } from "../constants/constants.ts";
 
 export interface IPharmacy {
     id: string;
@@ -7,15 +7,15 @@ export interface IPharmacy {
 }
 
 export const pharmaciesApi = createApi({
-    reducerPath: 'api/pharmacies',
+    reducerPath: "api/pharmacies",
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL,
     }),
     endpoints: (builder) => ({
         getPharmacies: builder.query<IPharmacy[], void>({
-            query: () => 'pharmacies',
+            query: () => "pharmacies",
         }),
     }),
 });
 
-export const { useGetPharmaciesQuery } = pharmaciesApi;
+export const {useGetPharmaciesQuery} = pharmaciesApi;
