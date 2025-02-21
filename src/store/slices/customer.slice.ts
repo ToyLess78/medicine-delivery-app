@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import {RootState} from '../store.ts';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../store.ts";
 
 
 export interface ICustomerState {
@@ -8,12 +8,12 @@ export interface ICustomerState {
 }
 
 const initialState: ICustomerState = {
-    email: '',
-    phone: '',
+    email: "",
+    phone: "",
 };
 
 export const customerSlice = createSlice({
-    name: 'customer',
+    name: "customer",
     initialState,
     reducers: {
         setAlignment: (state, action: PayloadAction<{ email: string, phone: string }>) => {
@@ -21,8 +21,8 @@ export const customerSlice = createSlice({
             state.phone = action.payload.phone;
         },
         reset: (state) => {
-            state.email = '';
-            state.phone = '';
+            state.email = "";
+            state.phone = "";
         },
     },
 });

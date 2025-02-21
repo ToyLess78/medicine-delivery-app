@@ -1,14 +1,14 @@
-import {combineReducers, configureStore} from '@reduxjs/toolkit'
-import {pharmaciesApi} from './api/pharmacies.api.ts';
-import {drugsApi} from './api/drugs.api.ts';
-import {cartSlice, ICartState} from './slices/cart.slice.ts';
-import {orderApi} from './api/order.api.ts';
-import {customerSlice, ICustomerState} from './slices/customer.slice.ts';
-import {mainSlice} from './slices/main.slice.ts';
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
+import { pharmaciesApi } from "./api/pharmacies.api.ts";
+import { drugsApi } from "./api/drugs.api.ts";
+import { cartSlice, ICartState } from "./slices/cart.slice.ts";
+import { orderApi } from "./api/order.api.ts";
+import { customerSlice, ICustomerState } from "./slices/customer.slice.ts";
+import { mainSlice } from "./slices/main.slice.ts";
 
 const loadCartState = () => {
     try {
-        const serializedState = localStorage.getItem('cartState');
+        const serializedState = localStorage.getItem("cartState");
         if (serializedState === null) {
             return undefined;
         }
@@ -21,7 +21,7 @@ const loadCartState = () => {
 const saveCartState = (state: ICartState) => {
     try {
         const serializedState = JSON.stringify(state);
-        localStorage.setItem('cartState', serializedState);
+        localStorage.setItem("cartState", serializedState);
     } catch (err) {
         return undefined;
     }
@@ -29,7 +29,7 @@ const saveCartState = (state: ICartState) => {
 
 const loadCustomerState = () => {
     try {
-        const serializedState = localStorage.getItem('customerState');
+        const serializedState = localStorage.getItem("customerState");
         if (serializedState === null) {
             return undefined;
         }
@@ -42,7 +42,7 @@ const loadCustomerState = () => {
 const saveCustomerState = (state: ICustomerState) => {
     try {
         const serializedState = JSON.stringify(state);
-        localStorage.setItem('customerState', serializedState);
+        localStorage.setItem("customerState", serializedState);
     } catch (err) {
         return undefined;
     }

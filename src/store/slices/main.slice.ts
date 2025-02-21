@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import {RootState} from '../store.ts';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../store.ts";
 
 
 export interface IMainState {
@@ -8,18 +8,18 @@ export interface IMainState {
 }
 
 const initialState: IMainState = {
-    alignment: '',
+    alignment: "",
     isLoading: false,
 };
 
 export const mainSlice = createSlice({
-    name: 'main',
+    name: "main",
     initialState,
     reducers: {
-        setAlignment: (state, action: PayloadAction<{ alignment: string}>) => {
+        setAlignment: (state, action: PayloadAction<{ alignment: string }>) => {
             state.alignment = action.payload.alignment;
         },
-        setIsLoading: (state, action: PayloadAction<{ isLoading: boolean}>) => {
+        setIsLoading: (state, action: PayloadAction<{ isLoading: boolean }>) => {
             state.isLoading = action.payload.isLoading;
         },
     },
