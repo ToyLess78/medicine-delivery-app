@@ -1,11 +1,11 @@
-import {useEffect} from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const RedirectToShop = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        navigate('/');
+        navigate("/");
     }, [navigate]);
 
     return null;
