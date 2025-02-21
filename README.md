@@ -1,43 +1,43 @@
 # Medicine Delivery App
+
 ### ~ React + TypeScript + Vite + MUI + Json Server + Concurrently
 
-#### ~ ReactDOM + React Router + React Hook Form + Redux Toolkit +  RTK Query
+#### ~ ReactDOM + React Router + React Hook Form + Redux Toolkit + RTK Query
 
 Available commands:
 -------------------
 
--   `npm install`
+- `npm install`
 
 
 - `npm run dev`
 
 
--  Serve I: 
+- Serve I:
 
-   ➜   [http://localhost:3001](http://localhost:3001/)
+  ➜   [http://localhost:3001](http://localhost:3001/)
 
-  -  Endpoints:  
+- Endpoints:
 
-     ➜  [http://localhost:3001/pharmacies](http://localhost:3001/pharmacies)
+  ➜  [http://localhost:3001/pharmacies](http://localhost:3001/pharmacies)
 
-     ➜  [http://localhost:3001/drugs](http://localhost:3001/drugs)
+  ➜  [http://localhost:3001/drugs](http://localhost:3001/drugs)
 
-     ➜  [http://localhost:3001/order](http://localhost:3001/order)
+  ➜  [http://localhost:3001/order](http://localhost:3001/order)
 
 
--   `npm run build`
-
+- `npm run build`
 
 #### !!! If Error:
+
 ```Material UI createTheme_default is not a function```
+
 #### Fixed it by removing the node_modules/.vite/deps folder and restarting the servers:
 
-
--   `rm -rf node_modules/.vite/deps`
+- `rm -rf node_modules/.vite/deps`
 
 
 - `npm run dev`
-
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
@@ -55,6 +55,8 @@ export default {
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked`
+  or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and
+  add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
